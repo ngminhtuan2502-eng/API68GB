@@ -7,7 +7,7 @@ app.use(cors());
 
 const PORT = process.env.PORT || 3000;
 
-const SOURCE_API = "http://192.168.100.210:14445/68gb";
+const SOURCE_API = "http://127.0.0.1:2345/68gb";
 
 app.get("/api/68gb", async (req, res) => {
   try {
