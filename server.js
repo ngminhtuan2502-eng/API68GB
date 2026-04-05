@@ -7,9 +7,9 @@ app.use(cors());
 
 const PORT = process.env.PORT || 3000;
 
-const SOURCE_API = "http://127.0.0.1:2345/68gb";
+const SOURCE_API = "http://172.2.2.176:10107/lchu";
 
-app.get("/api/68gb", async (req, res) => {
+app.get("/api/lchu", async (req, res) => {
   try {
     const { data } = await axios.get(SOURCE_API);
 
@@ -45,7 +45,7 @@ app.get("/api/68gb", async (req, res) => {
 });
 
 app.get("/", (req, res) => {
-  res.send("API 68GB đang chạy...");
+  res.send("API LC79 đang chạy...");
 });
 
 app.listen(PORT, () => {
