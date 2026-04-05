@@ -7,7 +7,7 @@ app.use(cors());
 
 const PORT = process.env.PORT || 3000;
 
-const SOURCE_API = "http://172.2.2.176:10107/lchu";
+const SOURCE_API = "http://172.2.2.176:8367/lchu";
 
 app.get("/api/lchu", async (req, res) => {
   try {
